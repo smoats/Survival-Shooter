@@ -1,0 +1,153 @@
+[LOG] System::create                           : Header version = 2.00.10. Current version = 2.00.10.
+[LOG] Manager::init                            : maxchannels = 256 studioflags = 00000006 flags 00000000 extradriverdata 0000000000000000.
+[LOG] SystemI::init                            : Initialize version=20010 (110198), maxchannels=256, flags=0x00020000
+[LOG] SystemI::setOutputInternal               : Setting output to 'FMOD WASAPI Output'
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=48000, nAvgBytesPerSec=384000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x00000003, SubFormat=00000003-0000-0010-8000-00AA00389B71.
+[LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
+[LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
+[LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
+[LOG] AsyncManager::init                       : manager 00000000D191C068 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : done
+[LOG] PlaybackSystem::init                     : 
+[LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
+[LOG] PlaybackSystem::init                     : done
+[LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
+[LOG] Manager::init                            : done.
+[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] Thread::initThread                       : Init FMOD profiler thread (recv). Priority: 0, Stack Size: 131072, Semaphore: No, Sleep Time: 0, Looping: No.
+[LOG] Thread::initThread                       : Init FMOD profiler thread (send). Priority: 0, Stack Size: 131072, Semaphore: No, Sleep Time: 0, Looping: No.
+[LOG] LiveUpdate::clientConnected              : client = 0000000023C26808
+[LOG] LiveUpdate::readPacket                   : Recieved init packet from client 0000000023C26808
+[LOG] LiveUpdate::readPacket                   : Accepting init message for client 0000000023C26808
+[LOG] LiveUpdate::transitionToConnected        : 
+[LOG] Manager::sendConnectTimeHash             : 
+[LOG] LiveUpdate::sendBankHash                 : 
+[LOG] LiveUpdate::acceptInitPacket             : Client 0000000023C26808 connected, entering connected state
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 61792
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 6432
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000008D0CF5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD2971C2D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD2971C2A0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD2971C3A0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD2971C460
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000D0E8EB28
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='R10-42-Muffled Steps on Floor or Stairs', format=2, channels=1, frequency=48000, lengthbytes=7168, lengthpcm=40806, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.341868.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 61792
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 6432
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000008D0CF5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD2971C2D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD2971C2A0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD2971C3A0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD2971C460
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000D0E8EB28
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='R10-42-Muffled Steps on Floor or Stairs 5', format=2, channels=1, frequency=48000, lengthbytes=5792, lengthpcm=33386, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.320655.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 61792
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 6432
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000008D0CF5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD2971C2D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD2971C2A0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD2971C3A0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD2971C460
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000D0E8EB28
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='R10-42-Muffled Steps on Floor or Stairs 2', format=2, channels=1, frequency=48000, lengthbytes=8832, lengthpcm=49462, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.373773.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 61792
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 6432
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000008D0CF5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD2971C2D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD2971C2A0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD2971C3A0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD2971C460
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000D0E8EB28
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='R10-42-Muffled Steps on Floor or Stairs 3', format=2, channels=1, frequency=48000, lengthbytes=5920, lengthpcm=33386, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.402453.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 61792
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 6432
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000008D0CF5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD2971C2D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD2971C2A0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD2971C3A0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD2971C460
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000D0E8EB28
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='R10-42-Muffled Steps on Floor or Stairs 4', format=2, channels=1, frequency=48000, lengthbytes=4960, lengthpcm=27204, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.409968.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 61792
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 6432
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000008D0CF5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD2971C2D0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD2971C2A0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD2971C3A0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD2971C460
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000D0E8EB28
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='R10-42-Muffled Steps on Floor or Stairs 1', format=2, channels=1, frequency=48000, lengthbytes=6880, lengthpcm=39568, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.318915.
+[LOG] SoundI::release                          :  (000000004E0B7338)
+[LOG] SoundI::release                          :     R10-42-Muffled Steps on Floor or Stairs 1 (00000000DA436AD8)
+[LOG] SoundI::release                          :  (000000004E0B6D78)
+[LOG] SoundI::release                          :     R10-42-Muffled Steps on Floor or Stairs 2 (00000000DA4365F8)
+[LOG] SoundI::release                          :  (000000004E0B71C8)
+[LOG] SoundI::release                          :     R10-42-Muffled Steps on Floor or Stairs 3 (00000000DA435F78)
+[LOG] SoundI::release                          :  (000000004E0B6C08)
+[LOG] SoundI::release                          :     R10-42-Muffled Steps on Floor or Stairs 4 (00000000DA436798)
+[LOG] SoundI::release                          :  (000000004E0B6088)
+[LOG] SoundI::release                          :     R10-42-Muffled Steps on Floor or Stairs 5 (00000000DA436458)
+[LOG] SoundI::release                          :  (000000004E0B7058)
+[LOG] SoundI::release                          :     R10-42-Muffled Steps on Floor or Stairs (00000000496A94F8)
+[LOG] SoundI::release                          :  (00000000479DF188)
+[LOG] SoundI::release                          :     Player Hurt (00000000D958A0A8)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] ProfileClient::markForDead               : Closing client connection
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] FMOD_OS_Net_Read                         : Interrupted.[LOG] Thread::callback                         : FMOD profiler thread (send) finished.
+[LOG] ProfileClient::recvThreadLoopFunction    : Socket disconnected
+[LOG] Thread::callback                         : FMOD profiler thread (recv) finished.
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.

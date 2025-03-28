@@ -2,35 +2,45 @@
 using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using FMOD.Studio;
+using FMODUnity;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int startingHealth = 100;
-    public int currentHealth;
+    public float startingHealth = 100;
+    public float currentHealth;
     public Slider healthSlider;
     public Image damageImage;
-    public AudioClip deathClip;
+    //public AudioClip deathClip;
     public float flashSpeed = 5f;
     public Color flashColour = new Color(1f, 0f, 0f, 0.1f);
 
 
     Animator anim;
-    AudioSource playerAudio;
+    //AudioSource playerAudio;
     PlayerMovement playerMovement;
     PlayerShooting playerShooting;
     bool isDead;
     bool damaged;
+
+    [SerializeField]
+    public EventInstance fmodEventPlayerHit;
+
+    [FMODUnity.EventRef]
+    public string soundPlayerHurt;
 
 
     void Awake()
     {
         //Mendapatkan refernce komponen
         anim = GetComponent<Animator>();
-        playerAudio = GetComponent<AudioSource>();
+        //playerAudio = GetComponent<AudioSource>();
         playerMovement = GetComponent<PlayerMovement>();
 
         playerShooting = GetComponentInChildren <PlayerShooting> ();
         currentHealth = startingHealth;
+
+        fmodEventPlayerHit = RuntimeManager.CreateInstance(soundPlayerHurt);
     }
 
 
@@ -50,6 +60,9 @@ public class PlayerHealth : MonoBehaviour
 
         //Set damage to false
         damaged = false;
+
+
+        fmodEventPlayerHit.setParameterByName("Player_Health", currentHealth);
     }
 
 
@@ -65,7 +78,9 @@ public class PlayerHealth : MonoBehaviour
         healthSlider.value = currentHealth;
 
         //Memainkan suara ketika terkena damage
-        playerAudio.Play();
+        //playerAudio.Play();
+
+        fmodEventPlayerHit.start();
 
         //Memanggil method Death() jika darahnya kurang dari sama dengan 10 dan belu mati
         if (currentHealth <= 0 && !isDead)
@@ -78,7 +93,7 @@ public class PlayerHealth : MonoBehaviour
     public void Healing()
     {
         //mengurangi health
-        int newHealth = currentHealth + 40;
+        float newHealth = currentHealth + 40;
         if (newHealth >= 100)
         {
             currentHealth = 100;
@@ -103,8 +118,8 @@ public class PlayerHealth : MonoBehaviour
         anim.SetTrigger("Die");
 
         //Memainkan suara ketika mati
-        playerAudio.clip = deathClip;
-        playerAudio.Play();
+        //playerAudio.clip = deathClip;
+        //playerAudio.Play();
 
         //mematikan script player movement
         playerMovement.enabled = false;

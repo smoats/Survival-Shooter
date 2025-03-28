@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using UnitySampleAssets.CrossPlatformInput;
+using FMODUnity;
+using FMOD.Studio;
 
 namespace CompleteProject
 {
@@ -45,6 +47,10 @@ namespace CompleteProject
             Animating (h, v);
         }
 
+        public void PlaySound(string path)
+        {
+            RuntimeManager.PlayOneShot(path, gameObject.transform.position);
+        }
 
         void Move (float h, float v)
         {

@@ -1,11 +1,16 @@
 ﻿using UnityEngine;
+using FMOD.Studio;
+using FMODUnity;
 
 public class PlayerShooting : MonoBehaviour
 {
     public int damagePerShot = 20;
     public float timeBetweenBullets = 0.15f;
     public float range = 100f;
-
+    //[SerializeField]
+    //public EventInstance fmodEventPlayerShoot;
+    [FMODUnity.EventRef]
+    public string gunShot;
 
     float timer;
     Ray shootRay = new Ray();
@@ -13,10 +18,9 @@ public class PlayerShooting : MonoBehaviour
     int shootableMask;
     ParticleSystem gunParticles;
     LineRenderer gunLine;
-    AudioSource gunAudio;
+    //AudioSource gunAudio;
     Light gunLight;
     float effectsDisplayTime = 0.2f;
-
 
     void Awake()
     {
@@ -26,7 +30,7 @@ public class PlayerShooting : MonoBehaviour
         //Mendapatkan Reference component
         gunParticles = GetComponent<ParticleSystem>();
         gunLine = GetComponent<LineRenderer>();
-        gunAudio = GetComponent<AudioSource>();
+        //gunAudio = GetComponent<AudioSource>();
         gunLight = GetComponent<Light>();
     }
 
@@ -63,7 +67,9 @@ public class PlayerShooting : MonoBehaviour
         timer = 0f;
 
         //Play audio
-        gunAudio.Play();
+        //gunAudio.Play();
+        RuntimeManager.PlayOneShot(gunShot, gameObject.transform.position);
+
 
         //enable Light
         gunLight.enabled = true;

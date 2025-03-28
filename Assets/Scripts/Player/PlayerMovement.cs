@@ -1,4 +1,6 @@
 ﻿using UnityEngine;
+using FMOD.Studio;
+using FMODUnity;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed = 6f;
@@ -7,6 +9,8 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody playerRigidbody;
     int floorMask;
     float camRayLength = 100f;
+    [FMODUnity.EventRef]
+    public string PlayerStep;
 
     private void Awake()
     {
@@ -73,6 +77,11 @@ public class PlayerMovement : MonoBehaviour
 
         //Move to position
         playerRigidbody.MovePosition(transform.position + movement);
+    }
+
+    public void PlaySound(string path)
+    {
+        RuntimeManager.PlayOneShot(path, gameObject.transform.position);
     }
 
     // Method player berjalan lebih cepat
